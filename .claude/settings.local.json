@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:station.railway.com)",
-      "WebFetch(domain:reddit-scout-open-source-apis.up.railway.app)"
+      "WebFetch(domain:reddit-scout-open-source-apis.up.railway.app)",
+      "WebFetch(domain:docs.railway.com)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }
