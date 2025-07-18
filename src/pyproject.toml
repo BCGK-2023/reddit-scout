@@ -1,0 +1,13 @@
+[project]
+name = "reddit-scout"
+version = "0.1.0"
+description = "Reddit Scout API - N8N compatible agentic tools for Reddit data extraction"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn>=0.24.0",
+    "pydantic>=2.5.0",
+    "requests>=2.32.3",
+    "python-multipart>=0.0.6",
+]
