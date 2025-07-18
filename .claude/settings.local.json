@@ -4,7 +4,13 @@
       "WebFetch(domain:station.railway.com)",
       "WebFetch(domain:reddit-scout-open-source-apis.up.railway.app)",
       "WebFetch(domain:docs.railway.com)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(curl:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }
