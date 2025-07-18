@@ -29,4 +29,4 @@ USER appuser
 # Railway handles healthchecks via external HTTP calls
 
 # Run the FastAPI server with Hypercorn (Railway recommended)
-CMD hypercorn api.main:app --bind 0.0.0.0:$PORT
+CMD hypercorn api.main:app --bind ::
