@@ -29,4 +29,4 @@ USER appuser
 # Railway handles healthchecks via external HTTP calls
 
 # Run the FastAPI server with dynamic port from Railway
-CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port $PORT --timeout-keep-alive 30"]
+CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000} --timeout-keep-alive 30"]
