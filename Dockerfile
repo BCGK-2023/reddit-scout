@@ -24,10 +24,9 @@ RUN pip install -e ./src/
 RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
 USER appuser
 
-# Expose port for Railway
-EXPOSE 8000
+# Railway handles port exposure dynamically
 
 # Railway handles healthchecks via external HTTP calls
 
-# Run the FastAPI server
-CMD ["python", "-m", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--timeout-keep-alive", "30"]
+# Run the FastAPI server with dynamic port from Railway
+CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port $PORT --timeout-keep-alive 30"]
